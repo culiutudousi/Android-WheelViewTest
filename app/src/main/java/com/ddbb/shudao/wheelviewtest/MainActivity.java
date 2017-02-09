@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final List<String> dataList = Arrays.asList("A", "B", "C", "D", "E", "F", "G");
+        final List<String> dataList = Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H");
 
         textView = (TextView) findViewById(R.id.text);
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 wheelView.setWheelAdapter(new ArrayWheelAdapter(MainActivity.this)); // 文本数据源
                 wheelView.setSkin(WheelView.Skin.Holo); // Holo皮肤
                 wheelView.setWheelData(dataList);  // 数据集合
-                wheelView.setSelection(3); // 设置初始选项
+                wheelView.setSelection(4); // 设置初始选项
 
                 Log.d("wheel dialog", "set wheelView success");
 
